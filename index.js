@@ -11,6 +11,12 @@ import dashboardRouter from './routes/dashboard.js'
 
 connectToDatabase()
 const app = express()
+app.use(cors({
+    origin: "https://employee-client-delta.vercel.app",
+    credentials: true
+}))
+
+
 app.use(cors())
 app.use(express.json())
 app.use(express.static('public/uploads'))
