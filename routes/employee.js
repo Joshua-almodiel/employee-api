@@ -11,6 +11,4 @@ router.put('/:id', authMiddleware, updateEmployee)
 router.get('/department/:id', authMiddleware, fetchEmployeesByDepId)
 
 
-
-
 export default router
